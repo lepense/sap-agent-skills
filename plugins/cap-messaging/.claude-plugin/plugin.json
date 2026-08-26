@@ -1,0 +1,9 @@
+{
+  "name": "cap-messaging",
+  "version": "0.11.0",
+  "description": "Expert guidance for event-driven SAP CAP — declaring events, emitting and subscribing, SAP Event Mesh / Cloud Application Event Hub brokers, CloudEvents, the transactional outbox, S/4HANA events, and deployment.",
+  "license": "MIT",
+  "author": "sap-agent-skills contributors",
+  "commands": ["commands/cap-add-messaging.md", "commands/cap-emit-event.md", "commands/cap-subscribe-event.md"],
+  "agents": ["agents/cap-messaging-developer.md", "agents/cap-event-integration-specialist.md"]
+}

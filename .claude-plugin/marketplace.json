@@ -11,6 +11,12 @@
       "source": "./plugins/cap-deploy"
     },
     {
+      "name": "cap-messaging",
+      "description": "Expert guidance for event-driven SAP CAP — declaring events, emitting and subscribing, SAP Event Mesh / Cloud Application Event Hub brokers, CloudEvents, the transactional outbox, S/4HANA events, and deployment.",
+      "version": "0.11.0",
+      "source": "./plugins/cap-messaging"
+    },
+    {
       "name": "cap-remote-services",
       "description": "Expert guidance for consuming external services in SAP CAP — importing OData APIs (cds import), configuring remote services with destinations, querying with cds.connect.to, mocking, mashups, and resilience.",
       "version": "0.10.0",

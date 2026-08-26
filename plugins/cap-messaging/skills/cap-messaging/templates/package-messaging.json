@@ -1,0 +1,16 @@
+{
+  "cds": {
+    "requires": {
+      "messaging": {
+        "kind": "enterprise-messaging-shared",
+        "format": "cloudevents",
+        "publishPrefix": "$namespace/ce/",
+        "subscribePrefix": "+/+/+/ce/",
+        "[development]": { "kind": "file-based-messaging" }
+      },
+      "outbox": {
+        "kind": "persistent-outbox"
+      }
+    }
+  }
+}

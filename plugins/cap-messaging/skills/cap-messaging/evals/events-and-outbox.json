@@ -1,0 +1,8 @@
+{
+  "name": "events, emit, and outbox present",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["event", "emit", "outbox", "CloudEvents", "Anti-patterns"],
+    "mustNotInclude": []
+  }
+}

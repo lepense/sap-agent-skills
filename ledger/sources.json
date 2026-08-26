@@ -155,6 +155,27 @@
       "source": "https://cap.cloud.sap/docs/releases/",
       "verifiedOn": "2026-08-26",
       "method": "mcp"
+    },
+    {
+      "plugin": "cap-messaging",
+      "claim": "Messaging is configured under cds.requires.messaging with kind: enterprise-messaging / enterprise-messaging-shared (SAP Event Mesh), event-broker (SAP Cloud Application Event Hub), or file-based-messaging/local-messaging (dev); format: 'cloudevents' fills CloudEvents headers",
+      "source": "https://cap.cloud.sap/docs/guides/messaging/",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-messaging",
+      "claim": "Events are declared in CDS (service { event Name { ... } }) with optional @topic; emitted via srv.emit(name, payload) and subscribed via srv.on(name, msg => msg.data) or low-level messaging.on(type,...)",
+      "source": "https://cap.cloud.sap/docs/guides/messaging/",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-messaging",
+      "claim": "The persistent outbox (cds.requires.outbox kind: persistent-outbox) stores emits in the DB transaction and delivers after commit with at-least-once semantics, so subscribers must be idempotent",
+      "source": "https://cap.cloud.sap/docs/node.js/outbox",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
     }
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "name": "subscribing and idempotency documented",
+  "against": "references/subscribing.md",
+  "assert": {
+    "mustInclude": ["cds.connect.to", "msg.data", "idempotent", "at least once"],
+    "mustNotInclude": []
+  }
+}

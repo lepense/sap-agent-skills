@@ -1,0 +1,8 @@
+{
+  "name": "transactional outbox documented",
+  "against": "references/outbox.md",
+  "assert": {
+    "mustInclude": ["outbox", "at-least-once", "idempotent", "persistent-outbox"],
+    "mustNotInclude": []
+  }
+}

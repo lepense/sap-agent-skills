@@ -1,0 +1,29 @@
+# mta.yaml excerpt — bind SAP Event Mesh (enterprise-messaging) to the CAP service.
+modules:
+  - name: bookshop-srv
+    type: nodejs
+    path: gen/srv
+    requires:
+      - name: bookshop-db
+      - name: bookshop-auth
+      - name: bookshop-messaging
+
+resources:
+  - name: bookshop-messaging
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: enterprise-messaging
+      service-plan: default
+      path: ./event-mesh.json   # namespace + queues/subscriptions
+
+# --- event-mesh.json (separate file) ---
+# {
+#   "emname": "bookshop",
+#   "namespace": "bookshop/ce",
+#   "version": "1.1.0",
+#   "options": { "management": true, "messagingrest": true, "messaging": true },
+#   "rules": {
+#     "queueRules":   { "publishFilter": ["${namespace}/*"], "subscribeFilter": ["${namespace}/*"] },
+#     "topicRules":   { "publishFilter": ["${namespace}/*"], "subscribeFilter": ["${namespace}/*"] }
+#   }
+# }

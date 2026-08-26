@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here. Versions are git tags.
 
+## v0.11.0
+- Add `cap-messaging` plugin — event-driven CAP: declare events, emit/subscribe, SAP Event
+  Mesh / Cloud Application Event Hub brokers, CloudEvents, the transactional outbox, and
+  S/4HANA events.
+
 ## v0.10.0
 - Add `cap-remote-services` plugin — consume external services: import OData APIs
   (`cds import`), configure destinations, query with `cds.connect.to`, mock locally, build
