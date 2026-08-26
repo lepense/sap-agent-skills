@@ -3,5 +3,12 @@
   "owner": {
     "name": "sap-agent-skills contributors"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "sap-cap",
+      "description": "Expert guidance for building and extending SAP CAP (Cloud Application Programming Model) applications in Node.js or Java, declarative-first.",
+      "version": "0.2.0",
+      "source": "./plugins/sap-cap"
+    }
+  ]
 }

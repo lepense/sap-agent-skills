@@ -49,7 +49,9 @@ docs/                             # authoring, portability, verification
 
 | Plugin | Description |
 |---|---|
-| _none yet_ | The first plugin, `sap-cap`, lands in `v0.2.0`. |
+| [`sap-cap`](plugins/sap-cap) | Build and extend SAP CAP apps (Node.js or Java) declarative-first — CDS modeling, services, handlers, Fiori annotations, security, deployment. Includes commands, agents, a `cds compile` hook, and CAP MCP wiring. |
+
+_More domains (SAPUI5, Fiori tools, ABAP, BTP, HANA, SAC) land in later phases, each reusing the `sap-cap` template._
 
 ## Quality gates
 
