@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "skill-frontmatter.schema.json",
+  "type": "object",
+  "required": ["name", "description", "license"],
+  "additionalProperties": true,
+  "properties": {
+    "name": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "description": { "type": "string", "minLength": 20 },
+    "license": { "type": "string" }
+  }
+}

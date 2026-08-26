@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ledger.schema.json",
+  "type": "object",
+  "required": ["entries"],
+  "additionalProperties": false,
+  "properties": {
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["plugin", "claim", "source", "verifiedOn", "method"],
+        "additionalProperties": false,
+        "properties": {
+          "plugin": { "type": "string" },
+          "claim": { "type": "string" },
+          "package": { "type": "string" },
+          "version": { "type": "string" },
+          "source": { "type": "string", "format": "uri" },
+          "verifiedOn": { "type": "string", "format": "date" },
+          "method": { "type": "string", "enum": ["mcp", "manual"] }
+        }
+      }
+    }
+  }
+}
