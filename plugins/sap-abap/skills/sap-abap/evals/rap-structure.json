@@ -1,0 +1,8 @@
+{
+  "name": "RAP structure and clean core in overview",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["RAP", "behavior definition", "Service binding", "clean core", "Anti-patterns"],
+    "mustNotInclude": []
+  }
+}

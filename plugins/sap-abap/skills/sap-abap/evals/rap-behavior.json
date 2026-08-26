@@ -1,0 +1,8 @@
+{
+  "name": "RAP behavior building blocks covered",
+  "against": "references/rap-behavior.md",
+  "assert": {
+    "mustInclude": ["determination", "validation", "action", "EML", "reported"],
+    "mustNotInclude": []
+  }
+}

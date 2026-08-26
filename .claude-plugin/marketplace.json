@@ -5,6 +5,12 @@
   },
   "plugins": [
     {
+      "name": "sap-abap",
+      "description": "Expert guidance for modern ABAP development — ABAP Cloud, clean core, the ABAP RESTful Application Programming Model (RAP), object-oriented ABAP, ADT, and ABAP Unit.",
+      "version": "0.5.0",
+      "source": "./plugins/sap-abap"
+    },
+    {
       "name": "sap-cap",
       "description": "Expert guidance for building and extending SAP CAP (Cloud Application Programming Model) applications in Node.js or Java, declarative-first.",
       "version": "0.2.0",
