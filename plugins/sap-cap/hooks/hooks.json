@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'command -v cds >/dev/null 2>&1 && cds compile \"*\" >/dev/null 2>&1; exit 0'"
+          }
+        ]
+      }
+    ]
+  }
+}
