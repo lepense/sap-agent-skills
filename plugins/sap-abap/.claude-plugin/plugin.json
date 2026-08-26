@@ -1,9 +1,0 @@
-{
-  "name": "sap-abap",
-  "version": "0.5.0",
-  "description": "Expert guidance for modern ABAP development — ABAP Cloud, clean core, the ABAP RESTful Application Programming Model (RAP), object-oriented ABAP, ADT, and ABAP Unit.",
-  "license": "MIT",
-  "author": "sap-agent-skills contributors",
-  "commands": ["commands/abap-create-rap-bo.md", "commands/abap-clean-core-check.md", "commands/abap-troubleshoot.md"],
-  "agents": ["agents/abap-rap-developer.md", "agents/abap-clean-core-reviewer.md"]
-}

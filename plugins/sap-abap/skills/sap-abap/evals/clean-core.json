@@ -1,8 +1,0 @@
-{
-  "name": "clean core rules documented",
-  "against": "references/abap-cloud-clean-core.md",
-  "assert": {
-    "mustInclude": ["released", "No modifications", "namespace", "API State"],
-    "mustNotInclude": []
-  }
-}

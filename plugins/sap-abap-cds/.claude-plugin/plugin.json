@@ -1,9 +1,0 @@
-{
-  "name": "sap-abap-cds",
-  "version": "0.6.0",
-  "description": "Expert guidance for ABAP Core Data Services (CDS) — view entities, associations, annotations, the Virtual Data Model layers, access control (DCL), and analytics.",
-  "license": "MIT",
-  "author": "sap-agent-skills contributors",
-  "commands": ["commands/cds-create-view.md", "commands/cds-add-access-control.md", "commands/cds-troubleshoot.md"],
-  "agents": ["agents/abap-cds-modeler.md", "agents/abap-cds-annotation-expert.md"]
-}

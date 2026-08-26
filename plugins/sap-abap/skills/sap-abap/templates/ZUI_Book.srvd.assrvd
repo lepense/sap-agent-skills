@@ -1,4 +1,0 @@
-@EndUserText.label: 'Book service definition'
-define service ZUI_Book {
-  expose ZI_Book as Book;
-}

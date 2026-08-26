@@ -4,9 +4,13 @@
 [![evals](https://github.com/lepense/sap-agent-skills/actions/workflows/evals.yml/badge.svg)](https://github.com/lepense/sap-agent-skills/actions/workflows/evals.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Curated, **verified** SAP skills for AI coding agents — portable across **Claude Code**
-(CLI + VS Code) and **GitHub Copilot** (VS Code), with quality enforced by evals, a
-source-verification ledger, and CI.
+Curated, **verified** skills for building **SAP CAP** applications **full-stack** with AI
+coding agents — the CAP backend (CDS + services) plus its UI layer (SAPUI5 and SAP Fiori
+tools). Portable across **Claude Code** (CLI + VS Code) and **GitHub Copilot** (VS Code),
+with quality enforced by evals, a source-verification ledger, and CI.
+
+Focused on the CAP stack: model your domain and services with `sap-cap`, build the UI with
+`sapui5`, and generate/preview Fiori elements apps with `sap-fiori-tools`.
 
 Inspired by [capire/skills](https://github.com/capire/skills) (quality bar, evals) and
 [secondsky/sap-skills](https://github.com/secondsky/sap-skills) (breadth), but written from
@@ -26,13 +30,15 @@ scratch under the permissive **MIT** license.
 
 **Claude Code** (CLI or VS Code):
 ```
-/plugin marketplace add <owner>/sap-agent-skills
+/plugin marketplace add lepense/sap-agent-skills
 /plugin install sap-cap
+/plugin install sapui5
+/plugin install sap-fiori-tools
 ```
 
 **GitHub Copilot (VS Code)** and other open-skill tools:
 ```
-npx skills add <owner>/sap-agent-skills
+npx skills add lepense/sap-agent-skills
 ```
 
 ## Repository layout
@@ -56,10 +62,9 @@ docs/                             # authoring, portability, verification
 | [`sap-cap`](plugins/sap-cap) | Build and extend SAP CAP apps (Node.js or Java) declarative-first — CDS modeling, services, handlers, Fiori annotations, security, deployment. Includes commands, agents, a `cds compile` hook, and CAP MCP wiring. |
 | [`sapui5`](plugins/sapui5) | Build SAPUI5 / OpenUI5 apps — MVC with XML views, models and data binding, `manifest.json`, routing, UI5 Tooling, and Fiori elements. Includes commands, agents, and a manifest-lint hook. |
 | [`sap-fiori-tools`](plugins/sap-fiori-tools) | Generate, model, and preview SAP Fiori elements apps — Application Generator, Page Map, Guided Development, annotation tooling, and mock/backend preview. Includes commands, agents, and a hook. |
-| [`sap-abap`](plugins/sap-abap) | Modern ABAP with ABAP Cloud and clean core — the RESTful Application Programming Model (RAP), OO ABAP, ADT, and ABAP Unit. Includes commands, agents, and RAP templates. |
-| [`sap-abap-cds`](plugins/sap-abap-cds) | Model ABAP Core Data Services — view entities, associations, the Virtual Data Model, annotations, DCL access control, and analytics. Includes commands, agents, and CDS templates. |
 
-_More domains (BTP, HANA, SAC) land in later phases, each reusing the golden template._
+These three cover the CAP full-stack: **backend/services** (`sap-cap`), **freestyle UI**
+(`sapui5`), and **Fiori elements** (`sap-fiori-tools`).
 
 ## Quality gates
 
@@ -72,9 +77,10 @@ npm run sync      # regenerate marketplace.json
 
 ## Contributing
 
-See the [authoring guide](docs/authoring-guide.md). New domains reuse the `sap-cap`
-template. Content is authored fresh (no copying from GPL-licensed sources) and verified
-before it ships.
+Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) and the
+[authoring guide](docs/authoring-guide.md). New skills reuse the existing plugin structure;
+content is authored fresh (no copying from GPL-licensed sources) and verified against
+official SAP sources before it ships.
 
 ## License
 

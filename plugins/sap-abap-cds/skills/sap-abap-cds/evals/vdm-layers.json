@@ -1,8 +1,0 @@
-{
-  "name": "VDM layering documented",
-  "against": "references/vdm-layers.md",
-  "assert": {
-    "mustInclude": ["Interface views", "Consumption views", "reusable"],
-    "mustNotInclude": []
-  }
-}
