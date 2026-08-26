@@ -1,0 +1,8 @@
+{
+  "name": "declarative-first guidance present",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["Declarative first", "annotation", "@restrict", "Anti-patterns"],
+    "mustNotInclude": []
+  }
+}

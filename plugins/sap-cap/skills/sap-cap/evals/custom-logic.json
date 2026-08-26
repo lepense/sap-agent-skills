@@ -1,0 +1,8 @@
+{
+  "name": "custom logic points to runtime references",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["custom logic", "references/nodejs.md", "references/java.md", "before"],
+    "mustNotInclude": []
+  }
+}

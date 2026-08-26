@@ -1,0 +1,8 @@
+{
+  "name": "deployment reference covers production facets",
+  "against": "references/deployment.md",
+  "assert": {
+    "mustInclude": ["cds add mta", "cds add hana", "cds add xsuaa", "cds build --production"],
+    "mustNotInclude": []
+  }
+}
