@@ -1,0 +1,8 @@
+{
+  "name": "MTA Cloud Foundry deployment documented",
+  "against": "references/mta-cloud-foundry.md",
+  "assert": {
+    "mustInclude": ["mbt build", "cf deploy", "hdi-shared", "approuter"],
+    "mustNotInclude": []
+  }
+}

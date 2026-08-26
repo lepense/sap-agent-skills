@@ -1,0 +1,35 @@
+name: deploy
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+
+      - run: npm ci
+      - run: npm test
+      - run: npx cds build --production
+      - run: npm i -g mbt && mbt build
+
+      - name: Install Cloud Foundry CLI
+        run: |
+          curl -sL "https://packages.cloudfoundry.org/stable?release=linux64-binary&version=v8" | tar -zx
+          sudo mv cf8 /usr/local/bin/cf
+
+      - name: Deploy MTA to Cloud Foundry
+        run: |
+          cf api "$CF_API"
+          cf auth "$CF_USER" "$CF_PASSWORD"
+          cf target -o "$CF_ORG" -s "$CF_SPACE"
+          cf deploy mta_archives/*.mtar -f
+        env:
+          CF_API: ${{ secrets.CF_API }}
+          CF_USER: ${{ secrets.CF_USER }}
+          CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
+          CF_ORG: ${{ secrets.CF_ORG }}
+          CF_SPACE: ${{ secrets.CF_SPACE }}

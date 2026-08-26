@@ -1,0 +1,9 @@
+{
+  "name": "cap-deploy",
+  "version": "0.9.0",
+  "description": "Expert guidance for deploying SAP CAP apps to SAP BTP — production facets, MTA on Cloud Foundry, Kyma/Kubernetes, SAP HANA, XSUAA/approuter, hybrid testing, multitenancy, and CI/CD.",
+  "license": "MIT",
+  "author": "sap-agent-skills contributors",
+  "commands": ["commands/cap-prepare-production.md", "commands/cap-deploy-cf.md", "commands/cap-deploy-troubleshoot.md"],
+  "agents": ["agents/cap-deployment-engineer.md", "agents/cap-cicd-engineer.md"]
+}

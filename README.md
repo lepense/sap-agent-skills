@@ -63,9 +63,11 @@ docs/                             # authoring, portability, verification
 | [`sapui5`](plugins/sapui5) | Build SAPUI5 / OpenUI5 apps — MVC with XML views, models and data binding, `manifest.json`, routing, UI5 Tooling, and Fiori elements. Includes commands, agents, and a manifest-lint hook. |
 | [`sap-fiori-tools`](plugins/sap-fiori-tools) | Generate, model, and preview SAP Fiori elements apps — Application Generator, Page Map, Guided Development, annotation tooling, and mock/backend preview. Includes commands, agents, and a hook. |
 | [`cap-testing`](plugins/cap-testing) | Test CAP apps — the `cds.test` harness, HTTP + programmatic service tests, authentication/mock users, test data, Java (JUnit) tests, and CI. Includes commands and agents. |
+| [`cap-deploy`](plugins/cap-deploy) | Deploy CAP apps to SAP BTP — production facets, MTA on Cloud Foundry, Kyma/Helm, SAP HANA, XSUAA/approuter, hybrid testing, multitenancy, and CI/CD. Includes commands, agents, and templates. |
 
 These cover the CAP full-stack: **backend/services** (`sap-cap`), **freestyle UI**
-(`sapui5`), **Fiori elements** (`sap-fiori-tools`), and **testing** (`cap-testing`).
+(`sapui5`), **Fiori elements** (`sap-fiori-tools`), **testing** (`cap-testing`), and
+**deployment** (`cap-deploy`).
 
 ## Quality gates
 

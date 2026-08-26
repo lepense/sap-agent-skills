@@ -1,0 +1,8 @@
+{
+  "name": "hybrid testing documented",
+  "against": "references/hybrid-testing.md",
+  "assert": {
+    "mustInclude": ["cds bind", "--profile hybrid", "cds watch"],
+    "mustNotInclude": []
+  }
+}

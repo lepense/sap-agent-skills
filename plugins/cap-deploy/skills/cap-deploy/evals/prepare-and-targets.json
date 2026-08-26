@@ -1,0 +1,8 @@
+{
+  "name": "production prep and targets present",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["cds add hana", "cds build --production", "Cloud Foundry", "Kyma", "Anti-patterns"],
+    "mustNotInclude": []
+  }
+}

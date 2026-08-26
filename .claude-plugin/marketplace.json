@@ -5,6 +5,12 @@
   },
   "plugins": [
     {
+      "name": "cap-deploy",
+      "description": "Expert guidance for deploying SAP CAP apps to SAP BTP — production facets, MTA on Cloud Foundry, Kyma/Kubernetes, SAP HANA, XSUAA/approuter, hybrid testing, multitenancy, and CI/CD.",
+      "version": "0.9.0",
+      "source": "./plugins/cap-deploy"
+    },
+    {
       "name": "cap-testing",
       "description": "Expert guidance for testing SAP CAP applications — the cds.test harness, HTTP and programmatic service tests, authentication/mock users, test data, Java (JUnit) tests, and CI integration.",
       "version": "0.8.0",

@@ -113,6 +113,27 @@
       "source": "https://cap.cloud.sap/docs/node.js/authentication",
       "verifiedOn": "2026-08-26",
       "method": "mcp"
+    },
+    {
+      "plugin": "cap-deploy",
+      "claim": "Production prep uses cds add hana|xsuaa|mta|approuter|multitenancy; build with 'cds build --production' (gen/srv, gen/db); MTA deploy via 'mbt build' + 'cf deploy mta_archives/*.mtar' or 'cds up'",
+      "source": "https://cap.cloud.sap/docs/guides/deployment/to-cf",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-deploy",
+      "claim": "Kyma deploy uses 'cds add kyma' (Helm charts in gen/chart, interactive cluster domain + registry) and 'cds up -2 k8s' / 'cds up --to k8s'; requires Docker, kubectl/helm/pack, kubeconfig, registry",
+      "source": "https://cap.cloud.sap/docs/guides/deployment/to-kyma",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-deploy",
+      "claim": "Hybrid testing binds local apps to remote CF service instances with 'cds bind -a <app>' / 'cds bind -2 <svc> --profile hybrid' and runs 'cds watch --profile hybrid' (Java: mvn cds:watch -Dspring-boot.run.profiles=hybrid); 'cds bind --exec -- node --test' for cloud-bound tests",
+      "source": "https://cap.cloud.sap/docs/advanced/hybrid-testing",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
     }
   ]
 }
