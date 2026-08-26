@@ -1,0 +1,11 @@
+{
+  "name": "sap-cap",
+  "version": "0.2.0",
+  "description": "Expert guidance for building and extending SAP CAP (Cloud Application Programming Model) applications in Node.js or Java, declarative-first.",
+  "license": "MIT",
+  "author": "sap-agent-skills contributors",
+  "commands": ["commands/cap-init.md", "commands/cap-troubleshoot.md", "commands/cap-deploy-check.md"],
+  "agents": ["agents/cap-service-developer.md", "agents/cap-cds-modeler.md"],
+  "hooks": "hooks/hooks.json",
+  "mcpServers": ".mcp.json"
+}
