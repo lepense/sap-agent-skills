@@ -9,7 +9,7 @@
     "validate": "node scripts/validate.mjs",
     "sync": "node scripts/sync-manifests.mjs",
     "evals": "node scripts/run-evals.mjs",
-    "test": "node --test"
+    "test": "node --test \"scripts/**/*.test.mjs\""
   },
   "devDependencies": {
     "ajv": "^8.17.1",
