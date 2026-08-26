@@ -1,0 +1,8 @@
+{
+  "name": "DCL access control documented",
+  "against": "references/access-control-dcl.md",
+  "assert": {
+    "mustInclude": ["define role", "grant select", "pfcg_auth", "authorizationCheck"],
+    "mustNotInclude": []
+  }
+}

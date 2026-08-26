@@ -1,0 +1,6 @@
+@EndUserText.label: 'Access control for ZI_Book'
+@MappingRole: true
+define role ZI_Book_Access {
+  grant select on ZI_Book
+    where ( AuthorId ) = aspect pfcg_auth( ZAUTH_BOOK, AUTHORID, ACTVT = '03' );
+}

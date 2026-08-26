@@ -53,6 +53,7 @@ docs/                             # authoring, portability, verification
 | [`sapui5`](plugins/sapui5) | Build SAPUI5 / OpenUI5 apps — MVC with XML views, models and data binding, `manifest.json`, routing, UI5 Tooling, and Fiori elements. Includes commands, agents, and a manifest-lint hook. |
 | [`sap-fiori-tools`](plugins/sap-fiori-tools) | Generate, model, and preview SAP Fiori elements apps — Application Generator, Page Map, Guided Development, annotation tooling, and mock/backend preview. Includes commands, agents, and a hook. |
 | [`sap-abap`](plugins/sap-abap) | Modern ABAP with ABAP Cloud and clean core — the RESTful Application Programming Model (RAP), OO ABAP, ADT, and ABAP Unit. Includes commands, agents, and RAP templates. |
+| [`sap-abap-cds`](plugins/sap-abap-cds) | Model ABAP Core Data Services — view entities, associations, the Virtual Data Model, annotations, DCL access control, and analytics. Includes commands, agents, and CDS templates. |
 
 _More domains (BTP, HANA, SAC) land in later phases, each reusing the golden template._
 

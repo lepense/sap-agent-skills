@@ -1,0 +1,8 @@
+{
+  "name": "view entity and layering guidance present",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["DEFINE VIEW ENTITY", "association", "DCL", "Anti-patterns"],
+    "mustNotInclude": []
+  }
+}

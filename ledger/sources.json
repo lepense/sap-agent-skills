@@ -112,6 +112,27 @@
       "source": "https://help.sap.com/docs/abap-cloud/abap-cloud/abap-cloud",
       "verifiedOn": "2026-08-26",
       "method": "manual"
+    },
+    {
+      "plugin": "sap-abap-cds",
+      "claim": "Modern ABAP CDS uses DEFINE VIEW ENTITY (replacing legacy DEFINE VIEW ... WITH); associations declared with 'association [card] to Target as _Alias on ...' and consumed via path expressions and $projection",
+      "source": "https://help.sap.com/docs/abap-cloud/abap-data-models/cds-view-entities",
+      "verifiedOn": "2026-08-26",
+      "method": "manual"
+    },
+    {
+      "plugin": "sap-abap-cds",
+      "claim": "Row-level authorization is declared in DCL access controls (define role ... grant select on <View> where ... = aspect pfcg_auth(...)); the view opts in with @AccessControl.authorizationCheck: #CHECK",
+      "source": "https://help.sap.com/docs/abap-cloud/abap-data-models/access-control-dcl",
+      "verifiedOn": "2026-08-26",
+      "method": "manual"
+    },
+    {
+      "plugin": "sap-abap-cds",
+      "claim": "CDS views are tested with the CDS test double framework (cl_cds_test_environment) which replaces underlying tables with test data for deterministic ABAP Unit tests",
+      "source": "https://help.sap.com/docs/abap-cloud/abap-development-tools/cds-test-double-framework",
+      "verifiedOn": "2026-08-26",
+      "method": "manual"
     }
   ]
 }
