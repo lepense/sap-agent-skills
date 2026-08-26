@@ -1,0 +1,19 @@
+{
+  "name": "sap-agent-skills",
+  "version": "0.1.0",
+  "description": "Curated, verified SAP skills for AI coding agents (Claude Code + GitHub Copilot).",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "sync": "node scripts/sync-manifests.mjs",
+    "evals": "node scripts/run-evals.mjs",
+    "test": "node --test scripts/"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.5.1"
+  }
+}
