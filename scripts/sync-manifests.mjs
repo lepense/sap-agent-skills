@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { walk } from "./lib/walk.mjs";
 
@@ -20,6 +20,7 @@ export function buildMarketplace(root) {
 
 if (process.argv[1] && u(process.argv[1]).endsWith("sync-manifests.mjs")) {
   const mp = buildMarketplace(".");
+  mkdirSync(".claude-plugin", { recursive: true });
   writeFileSync(".claude-plugin/marketplace.json", JSON.stringify(mp, null, 2) + "\n");
   console.log(`Wrote .claude-plugin/marketplace.json (${mp.plugins.length} plugin(s)).`);
 }
