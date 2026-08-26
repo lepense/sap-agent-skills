@@ -1,0 +1,21 @@
+// Example test for remote-service consumption (uses CAP's in-process mock).
+// NOTE: saved as .txt so the sap-agent-skills repo's own test runner doesn't execute it.
+// In a real CAP project, name it e.g. test/travel-remote.test.js.
+const cds = require('@sap/cds')
+const { GET, expect } = cds.test(__dirname + '/..')
+
+describe('TravelService remote suppliers (mocked)', () => {
+
+  it('serves Suppliers from the mocked remote API', async () => {
+    const { status, data } = await GET('/odata/v4/travel/Suppliers')
+    expect(status).to.equal(200)
+    expect(data.value).to.be.an('array')
+  })
+
+  it('enriches Travels with supplierName', async () => {
+    const svc = await cds.connect.to('TravelService')
+    const travels = await svc.read('Travels')
+    // with mock data present, at least one supplierName should be resolved
+    expect([travels].flat().some(t => 'supplierName' in t)).to.be.true
+  })
+})

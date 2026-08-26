@@ -1,0 +1,8 @@
+{
+  "name": "resilience guidance documented",
+  "against": "references/resilience.md",
+  "assert": {
+    "mustInclude": ["N+1", "timeout", "batch"],
+    "mustNotInclude": []
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "mocking approaches documented",
+  "against": "references/mocking.md",
+  "assert": {
+    "mustInclude": ["cds watch", "cds mock", "in-process"],
+    "mustNotInclude": []
+  }
+}

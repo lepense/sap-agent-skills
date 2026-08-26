@@ -64,10 +64,11 @@ docs/                             # authoring, portability, verification
 | [`sap-fiori-tools`](plugins/sap-fiori-tools) | Generate, model, and preview SAP Fiori elements apps — Application Generator, Page Map, Guided Development, annotation tooling, and mock/backend preview. Includes commands, agents, and a hook. |
 | [`cap-testing`](plugins/cap-testing) | Test CAP apps — the `cds.test` harness, HTTP + programmatic service tests, authentication/mock users, test data, Java (JUnit) tests, and CI. Includes commands and agents. |
 | [`cap-deploy`](plugins/cap-deploy) | Deploy CAP apps to SAP BTP — production facets, MTA on Cloud Foundry, Kyma/Helm, SAP HANA, XSUAA/approuter, hybrid testing, multitenancy, and CI/CD. Includes commands, agents, and templates. |
+| [`cap-remote-services`](plugins/cap-remote-services) | Consume external services — import OData APIs (`cds import`), configure destinations, query with `cds.connect.to`, mock locally, build mashups, and add resilience. Includes commands, agents, and templates. |
 
 These cover the CAP full-stack: **backend/services** (`sap-cap`), **freestyle UI**
-(`sapui5`), **Fiori elements** (`sap-fiori-tools`), **testing** (`cap-testing`), and
-**deployment** (`cap-deploy`).
+(`sapui5`), **Fiori elements** (`sap-fiori-tools`), **testing** (`cap-testing`),
+**deployment** (`cap-deploy`), and **external integration** (`cap-remote-services`).
 
 ## Quality gates
 

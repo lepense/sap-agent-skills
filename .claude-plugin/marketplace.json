@@ -11,6 +11,12 @@
       "source": "./plugins/cap-deploy"
     },
     {
+      "name": "cap-remote-services",
+      "description": "Expert guidance for consuming external services in SAP CAP — importing OData APIs (cds import), configuring remote services with destinations, querying with cds.connect.to, mocking, mashups, and resilience.",
+      "version": "0.10.0",
+      "source": "./plugins/cap-remote-services"
+    },
+    {
       "name": "cap-testing",
       "description": "Expert guidance for testing SAP CAP applications — the cds.test harness, HTTP and programmatic service tests, authentication/mock users, test data, Java (JUnit) tests, and CI integration.",
       "version": "0.8.0",

@@ -1,0 +1,9 @@
+{
+  "name": "cap-remote-services",
+  "version": "0.10.0",
+  "description": "Expert guidance for consuming external services in SAP CAP — importing OData APIs (cds import), configuring remote services with destinations, querying with cds.connect.to, mocking, mashups, and resilience.",
+  "license": "MIT",
+  "author": "sap-agent-skills contributors",
+  "commands": ["commands/cap-import-api.md", "commands/cap-consume-remote.md", "commands/cap-mock-remote.md"],
+  "agents": ["agents/cap-integration-developer.md", "agents/cap-api-import-specialist.md"]
+}

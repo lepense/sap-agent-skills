@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here. Versions are git tags.
 
+## v0.10.0
+- Add `cap-remote-services` plugin — consume external services: import OData APIs
+  (`cds import`), configure destinations, query with `cds.connect.to`, mock locally, build
+  mashups, and add resilience.
+
 ## v0.9.1
 - Repo hygiene: add `CHANGELOG.md`, issue templates, and a pull-request template.
 

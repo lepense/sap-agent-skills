@@ -1,0 +1,8 @@
+{
+  "name": "import and consume guidance present",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["cds import", "cds.connect.to", "destination", "Anti-patterns"],
+    "mustNotInclude": []
+  }
+}

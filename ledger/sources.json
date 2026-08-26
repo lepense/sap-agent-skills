@@ -134,6 +134,27 @@
       "source": "https://cap.cloud.sap/docs/advanced/hybrid-testing",
       "verifiedOn": "2026-08-26",
       "method": "mcp"
+    },
+    {
+      "plugin": "cap-remote-services",
+      "claim": "External OData APIs are imported with 'cds import <edmx>' (--as cds for readable model) into srv/external/ as .csn, registered under cds.requires; consumed via cds.connect.to(service) + CQL with query push-down",
+      "source": "https://cap.cloud.sap/docs/guides/using-services",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-remote-services",
+      "claim": "Imported remote APIs are auto-mocked in-process by 'cds watch' (shared in-memory DB) or run as separate mock processes with 'cds mock <api>'; the consumer then connects to the mock URL",
+      "source": "https://cap.cloud.sap/docs/guides/using-services",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-remote-services",
+      "claim": "cds export generates a lossless CAP reuse/API-client npm package from a CDS service definition (into ./apis), an alternative to EDMX exchange for CAP-to-CAP consumption",
+      "source": "https://cap.cloud.sap/docs/releases/",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
     }
   ]
 }
