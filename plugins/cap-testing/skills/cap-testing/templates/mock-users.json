@@ -1,0 +1,16 @@
+{
+  "cds": {
+    "requires": {
+      "auth": {
+        "[development]": {
+          "kind": "mocked",
+          "users": {
+            "alice": { "roles": ["admin"] },
+            "bob": { "roles": ["Viewer"] },
+            "carol": { "roles": ["admin", "Viewer"], "tenant": "t1" }
+          }
+        }
+      }
+    }
+  }
+}

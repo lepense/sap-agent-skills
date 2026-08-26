@@ -1,0 +1,8 @@
+{
+  "name": "layered coverage strategy documented",
+  "against": "references/coverage-strategy.md",
+  "assert": {
+    "mustInclude": ["Unit", "Integration", "programmatic", "Authorization"],
+    "mustNotInclude": []
+  }
+}

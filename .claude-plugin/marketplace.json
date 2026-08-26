@@ -5,6 +5,12 @@
   },
   "plugins": [
     {
+      "name": "cap-testing",
+      "description": "Expert guidance for testing SAP CAP applications — the cds.test harness, HTTP and programmatic service tests, authentication/mock users, test data, Java (JUnit) tests, and CI integration.",
+      "version": "0.8.0",
+      "source": "./plugins/cap-testing"
+    },
+    {
       "name": "sap-cap",
       "description": "Expert guidance for building and extending SAP CAP (Cloud Application Programming Model) applications in Node.js or Java, declarative-first.",
       "version": "0.2.0",

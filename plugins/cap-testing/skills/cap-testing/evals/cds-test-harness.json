@@ -1,0 +1,8 @@
+{
+  "name": "cds.test harness and approaches present",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["cds.test", "programmatic", "mock users", "Anti-patterns"],
+    "mustNotInclude": []
+  }
+}

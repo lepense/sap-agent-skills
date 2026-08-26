@@ -1,0 +1,8 @@
+{
+  "name": "authorization testing documented",
+  "against": "references/auth-mocking.md",
+  "assert": {
+    "mustInclude": ["mocked", "401", "@restrict", "auth"],
+    "mustNotInclude": []
+  }
+}

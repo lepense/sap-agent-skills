@@ -1,0 +1,9 @@
+{
+  "name": "cap-testing",
+  "version": "0.8.0",
+  "description": "Expert guidance for testing SAP CAP applications — the cds.test harness, HTTP and programmatic service tests, authentication/mock users, test data, Java (JUnit) tests, and CI integration.",
+  "license": "MIT",
+  "author": "sap-agent-skills contributors",
+  "commands": ["commands/cap-write-service-test.md", "commands/cap-add-mock-users.md", "commands/cap-test-troubleshoot.md"],
+  "agents": ["agents/cap-test-engineer.md", "agents/cap-test-data-designer.md"]
+}

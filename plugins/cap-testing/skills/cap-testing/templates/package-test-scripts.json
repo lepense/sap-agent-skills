@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "test": "node --test",
+    "test:jest": "jest",
+    "test:cloud": "cds bind --exec -- node --test"
+  },
+  "devDependencies": {
+    "@cap-js/cds-test": "^1"
+  }
+}

@@ -62,9 +62,10 @@ docs/                             # authoring, portability, verification
 | [`sap-cap`](plugins/sap-cap) | Build and extend SAP CAP apps (Node.js or Java) declarative-first — CDS modeling, services, handlers, Fiori annotations, security, deployment. Includes commands, agents, a `cds compile` hook, and CAP MCP wiring. |
 | [`sapui5`](plugins/sapui5) | Build SAPUI5 / OpenUI5 apps — MVC with XML views, models and data binding, `manifest.json`, routing, UI5 Tooling, and Fiori elements. Includes commands, agents, and a manifest-lint hook. |
 | [`sap-fiori-tools`](plugins/sap-fiori-tools) | Generate, model, and preview SAP Fiori elements apps — Application Generator, Page Map, Guided Development, annotation tooling, and mock/backend preview. Includes commands, agents, and a hook. |
+| [`cap-testing`](plugins/cap-testing) | Test CAP apps — the `cds.test` harness, HTTP + programmatic service tests, authentication/mock users, test data, Java (JUnit) tests, and CI. Includes commands and agents. |
 
-These three cover the CAP full-stack: **backend/services** (`sap-cap`), **freestyle UI**
-(`sapui5`), and **Fiori elements** (`sap-fiori-tools`).
+These cover the CAP full-stack: **backend/services** (`sap-cap`), **freestyle UI**
+(`sapui5`), **Fiori elements** (`sap-fiori-tools`), and **testing** (`cap-testing`).
 
 ## Quality gates
 

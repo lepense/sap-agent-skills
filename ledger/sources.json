@@ -91,6 +91,28 @@
       "source": "https://marketplace.visualstudio.com/items?itemName=SAPSE.sap-ux-fiori-tools-extension-pack",
       "verifiedOn": "2026-08-26",
       "method": "manual"
+    },
+    {
+      "plugin": "cap-testing",
+      "claim": "cds.test() boots the CAP server in-process with an in-memory DB and returns bound HTTP helpers (GET/POST, incl. tagged-template form) and Chai expect; @cap-js/cds-test v1 ships Chai 6 (ESM)",
+      "package": "@cap-js/cds-test",
+      "source": "https://cap.cloud.sap/docs/node.js/cds-test",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-testing",
+      "claim": "Programmatic tests use cds.connect.to(service) with CQL/read/run; per-request auth via { auth: { username, password } } or defaults.auth; cloud-service tests run via 'cds bind --exec -- node --test'",
+      "source": "https://cap.cloud.sap/docs/node.js/cds-test",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-testing",
+      "claim": "Mock-user authentication is configured under cds.requires.auth [development] kind: mocked with users/roles; anonymous requests return 401 and authenticated mock users return 200",
+      "source": "https://cap.cloud.sap/docs/node.js/authentication",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
     }
   ]
 }
