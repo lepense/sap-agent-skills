@@ -1,0 +1,8 @@
+{
+  "name": "SaaS tenant extensions (MTX) documented",
+  "against": "references/saas-tenant-extensions.md",
+  "assert": {
+    "mustInclude": ["MTX", "tenant", "subscriber", "extend"],
+    "mustNotInclude": []
+  }
+}

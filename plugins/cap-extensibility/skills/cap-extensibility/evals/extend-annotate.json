@@ -1,0 +1,8 @@
+{
+  "name": "extend/annotate and aspects present",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["extend", "annotate", "aspect", "verticalization", "Anti-patterns"],
+    "mustNotInclude": []
+  }
+}

@@ -176,6 +176,27 @@
       "source": "https://cap.cloud.sap/docs/node.js/outbox",
       "verifiedOn": "2026-08-26",
       "method": "mcp"
+    },
+    {
+      "plugin": "cap-extensibility",
+      "claim": "CDS models are extended additively with 'extend <Entity> with { ... }' (fields/associations) and 'annotate <Entity> with @...' (metadata overrides) from separate files without editing base sources; aspects bundle reusable elements applied via extend or ':' includes",
+      "source": "https://cap.cloud.sap/docs/cds/cdl#aspects",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-extensibility",
+      "claim": "New extension entities are exposed via 'extend service <Service> with { entity x_Foo as projection on extension.x_Foo; }'; reuse packages you don't own (e.g. @sap/cds/common) can be extended for verticalization",
+      "source": "https://cap.cloud.sap/docs/guides/extensibility/customization",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-extensibility",
+      "claim": "SaaS subscribers extend the base model per tenant at runtime via MTX extensibility (governed by an allowlist); feature toggles ship optional model/behavior under fts/<feature> folders enabled per tenant/user",
+      "source": "https://cap.cloud.sap/docs/guides/extensibility/",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
     }
   ]
 }

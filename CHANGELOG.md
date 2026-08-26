@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here. Versions are git tags.
 
+## v0.12.0
+- Add `cap-extensibility` plugin — extend CAP models: `extend`/`annotate`, aspects,
+  verticalization, exposing extension entities, SaaS tenant extensions via MTX, and feature
+  toggles.
+
 ## v0.11.0
 - Add `cap-messaging` plugin — event-driven CAP: declare events, emit/subscribe, SAP Event
   Mesh / Cloud Application Event Hub brokers, CloudEvents, the transactional outbox, and

@@ -1,0 +1,23 @@
+{
+  "cds": {
+    "requires": {
+      "cds.xt.ExtensibilityService": {
+        "element-prefix": "x_",
+        "extension-allowlist": [
+          {
+            "for": ["CatalogService.Books", "sap.capire.bookshop.Books"],
+            "kind": ["entity"],
+            "new-fields": 20
+          },
+          {
+            "for": ["CatalogService"],
+            "kind": ["entity", "service"]
+          }
+        ]
+      }
+    },
+    "features": {
+      "fts": ["reviews"]
+    }
+  }
+}

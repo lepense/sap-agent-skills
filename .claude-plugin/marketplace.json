@@ -11,6 +11,12 @@
       "source": "./plugins/cap-deploy"
     },
     {
+      "name": "cap-extensibility",
+      "description": "Expert guidance for extending SAP CAP models — extend/annotate, aspects, verticalization, exposing extension entities, SaaS tenant extensions via MTX, feature toggles, and extensibility governance.",
+      "version": "0.12.0",
+      "source": "./plugins/cap-extensibility"
+    },
+    {
       "name": "cap-messaging",
       "description": "Expert guidance for event-driven SAP CAP — declaring events, emitting and subscribing, SAP Event Mesh / Cloud Application Event Hub brokers, CloudEvents, the transactional outbox, S/4HANA events, and deployment.",
       "version": "0.11.0",

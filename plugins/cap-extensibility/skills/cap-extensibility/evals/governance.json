@@ -1,0 +1,8 @@
+{
+  "name": "extensibility governance documented",
+  "against": "references/governance.md",
+  "assert": {
+    "mustInclude": ["Whitelisting", "extensible", "x_", "stable"],
+    "mustNotInclude": []
+  }
+}

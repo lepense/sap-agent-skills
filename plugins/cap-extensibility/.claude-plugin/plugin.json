@@ -1,0 +1,9 @@
+{
+  "name": "cap-extensibility",
+  "version": "0.12.0",
+  "description": "Expert guidance for extending SAP CAP models — extend/annotate, aspects, verticalization, exposing extension entities, SaaS tenant extensions via MTX, feature toggles, and extensibility governance.",
+  "license": "MIT",
+  "author": "sap-agent-skills contributors",
+  "commands": ["commands/cap-extend-model.md", "commands/cap-add-tenant-extensibility.md", "commands/cap-add-feature-toggle.md"],
+  "agents": ["agents/cap-extensibility-modeler.md", "agents/cap-saas-extension-specialist.md"]
+}
