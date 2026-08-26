@@ -1,0 +1,25 @@
+<mvc:View
+    controllerName="my.app.controller.List"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+  <Page title="{i18n>listTitle}">
+    <subHeader>
+      <Toolbar>
+        <SearchField search=".onSearch" width="100%"/>
+      </Toolbar>
+    </subHeader>
+    <content>
+      <List
+          id="booksList"
+          items="{ path: '/Books', parameters: { $orderby: 'title' } }"
+          mode="SingleSelectMaster"
+          itemPress=".onItemPress">
+        <StandardListItem
+            title="{title}"
+            description="{author/name}"
+            info="{price}"
+            type="Navigation"/>
+      </List>
+    </content>
+  </Page>
+</mvc:View>

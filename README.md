@@ -50,8 +50,9 @@ docs/                             # authoring, portability, verification
 | Plugin | Description |
 |---|---|
 | [`sap-cap`](plugins/sap-cap) | Build and extend SAP CAP apps (Node.js or Java) declarative-first — CDS modeling, services, handlers, Fiori annotations, security, deployment. Includes commands, agents, a `cds compile` hook, and CAP MCP wiring. |
+| [`sapui5`](plugins/sapui5) | Build SAPUI5 / OpenUI5 apps — MVC with XML views, models and data binding, `manifest.json`, routing, UI5 Tooling, and Fiori elements. Includes commands, agents, and a manifest-lint hook. |
 
-_More domains (SAPUI5, Fiori tools, ABAP, BTP, HANA, SAC) land in later phases, each reusing the `sap-cap` template._
+_More domains (Fiori tools, ABAP, BTP, HANA, SAC) land in later phases, each reusing the golden template._
 
 ## Quality gates
 

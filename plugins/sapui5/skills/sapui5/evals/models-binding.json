@@ -1,0 +1,8 @@
+{
+  "name": "models and binding covered",
+  "against": "references/models-binding.md",
+  "assert": {
+    "mustInclude": ["JSONModel", "ODataModel", "Aggregation", "ResourceModel"],
+    "mustNotInclude": []
+  }
+}

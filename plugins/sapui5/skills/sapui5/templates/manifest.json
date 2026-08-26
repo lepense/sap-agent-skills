@@ -1,0 +1,54 @@
+{
+  "_version": "1.60.0",
+  "sap.app": {
+    "id": "my.app",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "dataSources": {
+      "mainService": {
+        "uri": "/odata/v4/catalog/",
+        "type": "OData",
+        "settings": { "odataVersion": "4.0" }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": { "desktop": true, "tablet": true, "phone": true }
+  },
+  "sap.ui5": {
+    "rootView": { "viewName": "my.app.view.App", "type": "XML", "id": "app", "async": true },
+    "dependencies": {
+      "minUI5Version": "1.120.0",
+      "libs": { "sap.m": {}, "sap.ui.core": {}, "sap.f": {} }
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": { "bundleName": "my.app.i18n.i18n" }
+      },
+      "": {
+        "dataSource": "mainService",
+        "settings": { "synchronizationMode": "None", "operationMode": "Server" }
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "my.app.view",
+        "controlId": "app",
+        "controlAggregation": "pages"
+      },
+      "routes": [
+        { "name": "list", "pattern": "", "target": "list" },
+        { "name": "detail", "pattern": "Books/{id}", "target": "detail" }
+      ],
+      "targets": {
+        "list": { "viewName": "List", "viewId": "list" },
+        "detail": { "viewName": "Detail", "viewId": "detail" }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "declarative MVC guidance present",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["XML views", "controller", "manifest.json", "Anti-patterns"],
+    "mustNotInclude": []
+  }
+}

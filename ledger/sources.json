@@ -54,6 +54,28 @@
       "source": "https://www.npmjs.com/package/@cap-js/mcp-server",
       "verifiedOn": "2026-08-26",
       "method": "manual"
+    },
+    {
+      "plugin": "sapui5",
+      "claim": "UI5 Tooling is distributed as @ui5/cli providing the 'ui5' command (init, serve, build); the project is described by ui5.yaml (specVersion, metadata, type, framework)",
+      "package": "@ui5/cli",
+      "source": "https://sap.github.io/ui5-tooling/stable/",
+      "verifiedOn": "2026-08-26",
+      "method": "manual"
+    },
+    {
+      "plugin": "sapui5",
+      "claim": "manifest.json is the application descriptor with three namespaces: sap.app, sap.ui, sap.ui5; sap.ui5 declares dependencies, models, rootView, and routing (routes/targets)",
+      "source": "https://help.sap.com/docs/SAPUI5/468a97775123488ab3345a0c48cadd8f/be0cf40f61184b358b5faedaec98b2da.html",
+      "verifiedOn": "2026-08-26",
+      "method": "manual"
+    },
+    {
+      "plugin": "sapui5",
+      "claim": "SAPUI5 uses MVC with XML views (mvc:View referencing controllerName) and controllers extending sap.ui.core.mvc.Controller; models include JSONModel, OData V2/V4 ODataModel, and ResourceModel for i18n",
+      "source": "https://sdk.openui5.org/topic/91f233476f4d1014b6dd926db0e91070",
+      "verifiedOn": "2026-08-26",
+      "method": "manual"
     }
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "name": "UI5 Tooling commands documented",
+  "against": "references/tooling.md",
+  "assert": {
+    "mustInclude": ["ui5 serve", "ui5 build", "ui5.yaml", "@ui5/cli"],
+    "mustNotInclude": []
+  }
+}

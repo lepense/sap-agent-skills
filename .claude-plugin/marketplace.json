@@ -9,6 +9,12 @@
       "description": "Expert guidance for building and extending SAP CAP (Cloud Application Programming Model) applications in Node.js or Java, declarative-first.",
       "version": "0.2.0",
       "source": "./plugins/sap-cap"
+    },
+    {
+      "name": "sapui5",
+      "description": "Expert guidance for building SAPUI5 / OpenUI5 applications — MVC with XML views, models and data binding, manifest.json, routing, UI5 Tooling, and Fiori elements.",
+      "version": "0.3.0",
+      "source": "./plugins/sapui5"
     }
   ]
 }

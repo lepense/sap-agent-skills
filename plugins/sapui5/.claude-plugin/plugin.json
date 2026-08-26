@@ -1,0 +1,10 @@
+{
+  "name": "sapui5",
+  "version": "0.3.0",
+  "description": "Expert guidance for building SAPUI5 / OpenUI5 applications — MVC with XML views, models and data binding, manifest.json, routing, UI5 Tooling, and Fiori elements.",
+  "license": "MIT",
+  "author": "sap-agent-skills contributors",
+  "commands": ["commands/ui5-init.md", "commands/ui5-add-view.md", "commands/ui5-troubleshoot.md"],
+  "agents": ["agents/ui5-app-developer.md", "agents/ui5-view-builder.md"],
+  "hooks": "hooks/hooks.json"
+}
