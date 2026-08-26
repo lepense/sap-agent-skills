@@ -1,5 +1,9 @@
 # sap-agent-skills
 
+[![validate](https://github.com/lepense/sap-agent-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/lepense/sap-agent-skills/actions/workflows/validate.yml)
+[![evals](https://github.com/lepense/sap-agent-skills/actions/workflows/evals.yml/badge.svg)](https://github.com/lepense/sap-agent-skills/actions/workflows/evals.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Curated, **verified** SAP skills for AI coding agents — portable across **Claude Code**
 (CLI + VS Code) and **GitHub Copilot** (VS Code), with quality enforced by evals, a
 source-verification ledger, and CI.
