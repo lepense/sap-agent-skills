@@ -1,1 +1,59 @@
-{ "entries": [] }
+{
+  "entries": [
+    {
+      "plugin": "sap-cap",
+      "claim": "cds CLI provides init, add <facet>, watch, compile, build, up; cds watch is a shortcut for 'cds serve all --with-mocks --in-memory?'; Java uses 'mvn cds:watch'",
+      "package": "@sap/cds",
+      "version": "10.0.6",
+      "source": "https://cap.cloud.sap/docs/tools/cds-cli",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "sap-cap",
+      "claim": "@sap/cds current published major is 10.x",
+      "package": "@sap/cds",
+      "version": "10.0.6",
+      "source": "https://www.npmjs.com/package/@sap/cds",
+      "verifiedOn": "2026-08-26",
+      "method": "manual"
+    },
+    {
+      "plugin": "sap-cap",
+      "claim": "Production facets: cds add hana | xsuaa | mta | multitenancy | ias; regenerate XSUAA descriptor with 'cds compile --to xsuaa' after auth annotation changes; xs-security.json uses scopes and role-templates with $XSAPPNAME",
+      "source": "https://cap.cloud.sap/docs/guides/deployment/to-cf",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "sap-cap",
+      "claim": "Declarative authorization via @requires and @restrict [{grant,to,where}]; Fiori UI via @UI.LineItem/@UI.SelectionFields; field control via @mandatory/@readonly/@UI.Hidden; @title/@description map to @Common.Label/@Core.Description",
+      "source": "https://cap.cloud.sap/docs/guides/security/authorization",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "sap-cap",
+      "claim": "Node.js handlers registered via this.before/this.on/this.after; req exposes event/target/query(CQN)/data/user/tenant; queries via cds.ql (SELECT/INSERT/UPSERT/UPDATE/DELETE)",
+      "source": "https://cap.cloud.sap/docs/node.js/core-services",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "sap-cap",
+      "claim": "CAP Java handlers are @Component classes implementing EventHandler with @ServiceName, using @Before/@On/@After; context.proceed() is valid only in @On handlers; queries via CQN builders and PersistenceService",
+      "source": "https://cap.cloud.sap/docs/java/event-handlers",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "sap-cap",
+      "claim": "CAP MCP server distributed as @cap-js/mcp-server",
+      "package": "@cap-js/mcp-server",
+      "version": "0.0.5",
+      "source": "https://www.npmjs.com/package/@cap-js/mcp-server",
+      "verifiedOn": "2026-08-26",
+      "method": "manual"
+    }
+  ]
+}
