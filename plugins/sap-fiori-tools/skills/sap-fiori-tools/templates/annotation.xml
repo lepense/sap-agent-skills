@@ -1,0 +1,38 @@
+<edmx:Edmx Version="4.0"
+    xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+    xmlns:edm="http://docs.oasis-open.org/odata/ns/edm">
+  <edmx:Reference Uri="/odata/v4/catalog/$metadata">
+    <edmx:Include Namespace="CatalogService"/>
+  </edmx:Reference>
+  <edmx:DataServices>
+    <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+      <Annotations Target="CatalogService.Books">
+
+        <Annotation Term="UI.HeaderInfo">
+          <Record Type="UI.HeaderInfoType">
+            <PropertyValue Property="TypeName" String="Book"/>
+            <PropertyValue Property="TypeNamePlural" String="Books"/>
+            <PropertyValue Property="Title">
+              <Record Type="UI.DataField"><PropertyValue Property="Value" Path="title"/></Record>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+
+        <Annotation Term="UI.SelectionFields">
+          <Collection>
+            <PropertyPath>author_ID</PropertyPath>
+            <PropertyPath>price</PropertyPath>
+          </Collection>
+        </Annotation>
+
+        <Annotation Term="UI.LineItem">
+          <Collection>
+            <Record Type="UI.DataField"><PropertyValue Property="Value" Path="title"/></Record>
+            <Record Type="UI.DataField"><PropertyValue Property="Value" Path="price"/></Record>
+          </Collection>
+        </Annotation>
+
+      </Annotations>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

@@ -76,6 +76,21 @@
       "source": "https://sdk.openui5.org/topic/91f233476f4d1014b6dd926db0e91070",
       "verifiedOn": "2026-08-26",
       "method": "manual"
+    },
+    {
+      "plugin": "sap-fiori-tools",
+      "claim": "SAP Fiori tools is an extension pack (SAPSE.sap-ux-fiori-tools-extension-pack) for VS Code and SAP Business Application Studio to build Fiori elements apps; includes Application Generator, Application Modeler (Page Map), Guided Development, and annotation tooling",
+      "source": "https://help.sap.com/docs/SAP_FIORI_tools/17d50220bcd848aa854c9c182d65b699/2d8b1cb11f6541e5ab16f05461c64201.html",
+      "verifiedOn": "2026-08-26",
+      "method": "manual"
+    },
+    {
+      "plugin": "sap-fiori-tools",
+      "claim": "Apps are generated via @sap/generator-fiori (Yeoman, supports headless config); the fiori CLI from @sap/ux-ui5-tooling provides fiori run / fiori add / fiori deploy; mock preview uses the sap-fe-mockserver middleware via ui5-mock.yaml",
+      "package": "@sap/ux-ui5-tooling",
+      "source": "https://marketplace.visualstudio.com/items?itemName=SAPSE.sap-ux-fiori-tools-extension-pack",
+      "verifiedOn": "2026-08-26",
+      "method": "manual"
     }
   ]
 }

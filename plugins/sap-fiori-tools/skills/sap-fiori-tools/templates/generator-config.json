@@ -1,0 +1,28 @@
+{
+  "version": "0.1",
+  "floorplan": "FE_LROP",
+  "project": {
+    "name": "books",
+    "namespace": "my",
+    "title": "Books",
+    "description": "Manage books",
+    "ui5Version": "1.120.0",
+    "localUI5Version": "1.120.0",
+    "sapux": true
+  },
+  "service": {
+    "servicePath": "/odata/v4/catalog/",
+    "capService": {
+      "projectPath": "../bookshop",
+      "serviceName": "CatalogService",
+      "serviceCdsPath": "srv/cat-service.cds"
+    }
+  },
+  "entityConfig": {
+    "mainEntity": { "entityName": "Books" },
+    "navigationEntity": { "EntitySet": "Authors", "Name": "author" }
+  },
+  "deployConfig": {
+    "deployTarget": "ABAP"
+  }
+}

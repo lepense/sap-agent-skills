@@ -11,6 +11,12 @@
       "source": "./plugins/sap-cap"
     },
     {
+      "name": "sap-fiori-tools",
+      "description": "Expert guidance for SAP Fiori tools — generating, modeling, and previewing SAP Fiori elements apps with the Application Generator, Page Map, Guided Development, and annotation tooling in VS Code / SAP Business Application Studio.",
+      "version": "0.4.0",
+      "source": "./plugins/sap-fiori-tools"
+    },
+    {
       "name": "sapui5",
       "description": "Expert guidance for building SAPUI5 / OpenUI5 applications — MVC with XML views, models and data binding, manifest.json, routing, UI5 Tooling, and Fiori elements.",
       "version": "0.3.0",

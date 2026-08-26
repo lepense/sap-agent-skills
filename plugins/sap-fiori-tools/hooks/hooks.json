@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'f=webapp/manifest.json; command -v node >/dev/null 2>&1 && [ -f \"$f\" ] && node -e \"JSON.parse(require(\\047fs\\047).readFileSync(process.argv[1]))\" \"$f\" 2>/dev/null; exit 0'"
+          }
+        ]
+      }
+    ]
+  }
+}

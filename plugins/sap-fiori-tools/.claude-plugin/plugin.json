@@ -1,0 +1,10 @@
+{
+  "name": "sap-fiori-tools",
+  "version": "0.4.0",
+  "description": "Expert guidance for SAP Fiori tools — generating, modeling, and previewing SAP Fiori elements apps with the Application Generator, Page Map, Guided Development, and annotation tooling in VS Code / SAP Business Application Studio.",
+  "license": "MIT",
+  "author": "sap-agent-skills contributors",
+  "commands": ["commands/fiori-generate-app.md", "commands/fiori-add-page.md", "commands/fiori-preview.md"],
+  "agents": ["agents/fiori-app-generator.md", "agents/fiori-annotation-modeler.md"],
+  "hooks": "hooks/hooks.json"
+}

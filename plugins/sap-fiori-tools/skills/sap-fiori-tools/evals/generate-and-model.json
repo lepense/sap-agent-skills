@@ -1,0 +1,8 @@
+{
+  "name": "generation and modeling guidance present",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["Application Generator", "Page Map", "Guided Development", "Anti-patterns"],
+    "mustNotInclude": []
+  }
+}

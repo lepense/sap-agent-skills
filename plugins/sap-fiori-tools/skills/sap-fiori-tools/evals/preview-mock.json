@@ -1,0 +1,8 @@
+{
+  "name": "mock preview documented",
+  "against": "references/preview-mock.md",
+  "assert": {
+    "mustInclude": ["start-mock", "sap-fe-mockserver", "ui5-mock.yaml"],
+    "mustNotInclude": []
+  }
+}

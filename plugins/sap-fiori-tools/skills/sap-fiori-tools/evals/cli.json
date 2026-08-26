@@ -1,0 +1,8 @@
+{
+  "name": "CLI generator and fiori commands documented",
+  "against": "references/cli.md",
+  "assert": {
+    "mustInclude": ["@sap/generator-fiori", "fiori run", "fiori deploy", "headless"],
+    "mustNotInclude": []
+  }
+}
