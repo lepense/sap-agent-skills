@@ -35,6 +35,12 @@
       "source": "./plugins/cap-testing"
     },
     {
+      "name": "cap-upgrade",
+      "description": "Expert guidance for upgrading SAP CAP projects — the cds upgrade tool, runtime vs design-time versions, Node.js/JDK requirements, major-release migration, Java BOM, dependency hygiene, and regression testing.",
+      "version": "0.13.0",
+      "source": "./plugins/cap-upgrade"
+    },
+    {
       "name": "sap-cap",
       "description": "Expert guidance for building and extending SAP CAP (Cloud Application Programming Model) applications in Node.js or Java, declarative-first.",
       "version": "0.2.0",

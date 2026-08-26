@@ -1,0 +1,8 @@
+{
+  "name": "Node.js requirements for CDS 10 documented",
+  "against": "references/node-jdk-requirements.md",
+  "assert": {
+    "mustInclude": ["Node.js", "v22", "v24", "engines"],
+    "mustNotInclude": []
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "upgrade tool and process present",
+  "against": "SKILL.md",
+  "assert": {
+    "mustInclude": ["cds upgrade", "@sap/cds", "Node.js", "migration guide", "Anti-patterns"],
+    "mustNotInclude": []
+  }
+}

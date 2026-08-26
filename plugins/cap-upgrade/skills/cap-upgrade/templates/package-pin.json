@@ -1,0 +1,15 @@
+{
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@sap/cds": "^10.0.0"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^10.0.0"
+  },
+  "scripts": {
+    "build": "cds build --production",
+    "test": "node --test"
+  }
+}

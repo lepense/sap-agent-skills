@@ -1,0 +1,35 @@
+<!-- CAP Java: drive all com.sap.cds versions from one property via the services BOM. -->
+<properties>
+  <cds.services.version>5.0.0</cds.services.version>
+  <maven.compiler.release>21</maven.compiler.release>
+</properties>
+
+<dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>com.sap.cds</groupId>
+      <artifactId>cds-services-bom</artifactId>
+      <version>${cds.services.version}</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
+
+<!-- Install cds-dk via npm ci (replaces the deprecated install-cdsdk goal). -->
+<build>
+  <plugins>
+    <plugin>
+      <groupId>com.sap.cds</groupId>
+      <artifactId>cds-maven-plugin</artifactId>
+      <version>${cds.services.version}</version>
+      <executions>
+        <execution>
+          <id>cds.npm-ci</id>
+          <goals><goal>npm</goal></goals>
+          <configuration><arguments>ci</arguments></configuration>
+        </execution>
+      </executions>
+    </plugin>
+  </plugins>
+</build>

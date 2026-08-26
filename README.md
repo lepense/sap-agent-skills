@@ -67,11 +67,13 @@ docs/                             # authoring, portability, verification
 | [`cap-remote-services`](plugins/cap-remote-services) | Consume external services — import OData APIs (`cds import`), configure destinations, query with `cds.connect.to`, mock locally, build mashups, and add resilience. Includes commands, agents, and templates. |
 | [`cap-messaging`](plugins/cap-messaging) | Event-driven CAP — declare events, emit/subscribe, SAP Event Mesh / Cloud Application Event Hub, CloudEvents, the transactional outbox, and S/4HANA events. Includes commands, agents, and templates. |
 | [`cap-extensibility`](plugins/cap-extensibility) | Extend CAP models — `extend`/`annotate`, aspects, verticalization, exposing extension entities, SaaS tenant extensions via MTX, and feature toggles. Includes commands, agents, and templates. |
+| [`cap-upgrade`](plugins/cap-upgrade) | Upgrade CAP projects — the `cds upgrade` tool, runtime vs design-time versions, Node.js/JDK requirements, major-release migration, Java BOM, dependency hygiene, and regression testing. Includes commands, agents, and templates. |
 
-These cover the CAP full-stack: **backend/services** (`sap-cap`), **freestyle UI**
+These cover the CAP application lifecycle: **backend/services** (`sap-cap`), **freestyle UI**
 (`sapui5`), **Fiori elements** (`sap-fiori-tools`), **testing** (`cap-testing`),
 **deployment** (`cap-deploy`), **external integration** (`cap-remote-services`),
-**eventing** (`cap-messaging`), and **extensibility** (`cap-extensibility`).
+**eventing** (`cap-messaging`), **extensibility** (`cap-extensibility`), and
+**upgrades** (`cap-upgrade`).
 
 ## Quality gates
 

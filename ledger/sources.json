@@ -197,6 +197,28 @@
       "source": "https://cap.cloud.sap/docs/guides/extensibility/",
       "verifiedOn": "2026-08-26",
       "method": "mcp"
+    },
+    {
+      "plugin": "cap-upgrade",
+      "claim": "The 'cds upgrade' assistant (run after 'npm i -g @sap/cds-dk') scans a CAP project for breaking changes and gives migration guidance toward the current major (CDS 10); 'cds version' inspects installed tooling",
+      "package": "@sap/cds-dk",
+      "source": "https://cap.cloud.sap/docs/releases/",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-upgrade",
+      "claim": "@sap/cds is the runtime pinned in package.json dependencies; @sap/cds-dk is the design-time toolkit (global and/or devDependency); they are bumped together per major",
+      "source": "https://cap.cloud.sap/docs/get-started/#setup",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
+    },
+    {
+      "plugin": "cap-upgrade",
+      "claim": "CDS 10 Node.js support: v20 reached end of life (April 2026) and is not supported, v22 is the minimum required, v24 is recommended; CAP Java centralizes versions via cds-services-bom and prefers 'npm ci' over the deprecated install-cdsdk goal",
+      "source": "https://cap.cloud.sap/docs/releases/",
+      "verifiedOn": "2026-08-26",
+      "method": "mcp"
     }
   ]
 }

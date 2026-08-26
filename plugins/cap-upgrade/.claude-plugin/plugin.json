@@ -1,0 +1,9 @@
+{
+  "name": "cap-upgrade",
+  "version": "0.13.0",
+  "description": "Expert guidance for upgrading SAP CAP projects — the cds upgrade tool, runtime vs design-time versions, Node.js/JDK requirements, major-release migration, Java BOM, dependency hygiene, and regression testing.",
+  "license": "MIT",
+  "author": "sap-agent-skills contributors",
+  "commands": ["commands/cap-upgrade-cds.md", "commands/cap-check-outdated.md", "commands/cap-upgrade-troubleshoot.md"],
+  "agents": ["agents/cap-upgrade-engineer.md", "agents/cap-dependency-maintainer.md"]
+}

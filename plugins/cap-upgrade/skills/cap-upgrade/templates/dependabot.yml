@@ -1,0 +1,16 @@
+# .github/dependabot.yml — grouped weekly updates for CAP dependencies.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      cap:
+        patterns:
+          - "@sap/cds"
+          - "@sap/cds-dk"
+          - "@cap-js/*"
+      dev-tooling:
+        dependency-type: development

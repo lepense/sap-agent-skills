@@ -1,0 +1,8 @@
+{
+  "name": "runtime vs design-time distinction documented",
+  "against": "references/runtime-vs-designtime.md",
+  "assert": {
+    "mustInclude": ["@sap/cds", "@sap/cds-dk", "runtime", "design-time"],
+    "mustNotInclude": []
+  }
+}

@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here. Versions are git tags.
 
+## v0.13.0
+- Add `cap-upgrade` plugin — upgrade CAP projects: the `cds upgrade` tool, runtime vs
+  design-time versions, Node.js/JDK requirements, major-release migration, Java BOM,
+  dependency hygiene, and regression testing.
+
 ## v0.12.0
 - Add `cap-extensibility` plugin — extend CAP models: `extend`/`annotate`, aspects,
   verticalization, exposing extension entities, SaaS tenant extensions via MTX, and feature
